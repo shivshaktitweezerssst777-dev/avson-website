@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AVSON | SHIVSHAKTI TWEEZERS (SST) | Surgical & Veterinary Instruments</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f8fa;
+    color:#17232d;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#ffffff;
+    border-bottom:1px solid #dce5eb;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-box{
+    width:55px;
+    height:55px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#0879c9,#003b70);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:19px;
+    font-weight:bold;
+}
+
+.logo-text h2{
+    font-size:20px;
+    color:#003b70;
+}
+
+.logo-text p{
+    font-size:11px;
+    color:#0879c9;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+nav{
+    display:flex;
+    gap:24px;
+}
+
+nav a{
+    color:#17232d;
+    font-weight:bold;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#0879c9;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 25px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.eyebrow{
+    color:#0879c9;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.05;
+    color:#003b70;
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+    color:#0879c9;
+}
+
+.hero-text{
+    color:#526575;
+    font-size:17px;
+    line-height:1.8;
+    max-width:650px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    margin-top:28px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 22px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:#0879c9;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#005b9d;
+}
+
+.btn-secondary{
+    background:white;
+    color:#003b70;
+    border:1px solid #cbd9e2;
+}
+
+.btn-secondary:hover{
+    border-color:#0879c9;
+}
+
+/* ================= HERO IMAGE ================= */
+
+.hero-card{
+    background:white;
+    padding:15px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+    border:1px solid #dce5eb;
+}
+
+.hero-card img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+}
+
+.hero-caption{
+    padding:18px 8px 5px;
+}
+
+.hero-caption h3{
+    color:#003b70;
+    margin-bottom:5px;
+}
+
+.hero-caption p{
+    color:#637584;
+    font-size:14px;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:75px 25px;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-heading h2{
+    font-size:38px;
+    color:#003b70;
+    margin-bottom:12px;
+}
+
+.section-heading p{
+    color:#637584;
+    max-width:700px;
+    margin:auto;
+}
+
+/* ================= CATEGORIES ================= */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.category-card{
+    background:white;
+    border:1px solid #dce5eb;
+    border-radius:15px;
+    padding:28px 22px;
+    text-align:center;
+    transition:.25s;
+}
+
+.category-card:hover{
+    transform:translateY(-5px);
+    border-color:#0879c9;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.category-icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin:0 auto 18px;
+    background:#eaf5fc;
+    color:#0879c9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+}
+
+.category-card h3{
+    color:#003b70;
+    margin-bottom:10px;
+}
+
+.category-card p{
+    color:#637584;
+    font-size:14px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.product-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid #dce5eb;
+    transition:.25s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.10);
+}
+
+.product-image{
+    height:210px;
+    background:linear-gradient(135deg,#e8f1f5,#c5d5dd);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.instrument-placeholder{
+    font-size:60px;
+    color:#0879c9;
+}
+
+.product-content{
+    padding:20px;
+}
+
+.product-content h3{
+    color:#003b70;
+    margin-bottom:7px;
+}
+
+.product-content p{
+    color:#637584;
+    font-size:14px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-section{
+    max-width:none;
+    background:#eaf3f7;
+}
+
+.about-inner{
+    max-width:1200px;
+    margin:auto;
+    padding:75px 25px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.about-inner h2{
+    color:#003b70;
+    font-size:38px;
+    margin-bottom:18px;
+}
+
+.about-inner p{
+    color:#526575;
+    line-height:1.8;
+}
+
+.about-box{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    border:1px solid #dce5eb;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.about-box h3{
+    color:#003b70;
+    margin-bottom:18px;
+}
+
+.check-list{
+    list-style:none;
+}
+
+.check-list li{
+    padding:10px 0;
+    border-bottom:1px solid #e5edf1;
+    color:#526575;
+}
+
+.check-list li:last-child{
+    border-bottom:0;
+}
+
+.check-list li::before{
+    content:"✓";
+    color:#0879c9;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+/* ================= QUALITY ================= */
+
+.quality-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.quality-card{
+    background:#003b70;
+    color:white;
+    border-radius:16px;
+    padding:30px;
+}
+
+.quality-card h3{
+    margin-bottom:10px;
+}
+
+.quality-card p{
+    color:#d8e9f5;
+    font-size:14px;
+}
+
+/* ================= CUSTOM ================= */
+
+.custom-section{
+    background:white;
+}
+
+.custom-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    background:#f0f7fb;
+    padding:50px 30px;
+    border-radius:20px;
+    border:1px solid #dce5eb;
+}
+
+.custom-box h2{
+    color:#003b70;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.custom-box p{
+    color:#637584;
+    margin-bottom:25px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-section{
+    background:#f5f8fa;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.contact-box{
+    background:white;
+    border:1px solid #dce5eb;
+    border-radius:18px;
+    padding:30px;
+}
+
+.contact-box h3{
+    color:#003b70;
+    font-size:26px;
+    margin-bottom:20px;
+}
+
+.contact-row{
+    padding:13px 0;
+    border-bottom:1px solid #e5edf1;
+}
+
+.contact-row:last-child{
+    border-bottom:0;
+}
+
+.contact-label{
+    display:block;
+    color:#0879c9;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:3px;
+}
+
+.contact-row a{
+    color:#17232d;
+    font-weight:bold;
+}
+
+.contact-row a:hover{
+    color:#0879c9;
+}
+
+.address{
+    color:#526575;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#003b70;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+footer strong{
+    display:block;
+    font-size:19px;
+    margin-bottom:5px;
+}
+
+footer p{
+    color:#c9dfed;
+    font-size:13px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .hero{
+        grid-template-columns:1fr;
+    }
+
+    .category-grid,
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-inner,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .quality-grid{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        gap:12px;
+    }
+
+    nav a{
+        font-size:12px;
+    }
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        padding-top:45px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .category-grid,
+    .products-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:55px 18px;
+    }
+
+    .section-heading h2,
+    .about-inner h2{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <div class="navbar">
+
+        <div class="logo-area">
+            <div class="logo-box">AV</div>
+
+            <div class="logo-text">
+                <h2>AVSON</h2>
+                <p>SHIVSHAKTI TWEEZERS (SST)</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#quality">Quality</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main id="home">
+
+<section class="hero">
+
+    <div>
+
+        <div class="eyebrow">
+            AVSON • PRECISION INSTRUMENTS • PROFESSIONAL USE
+        </div>
+
+        <h1>
+            Surgical & <span>Veterinary</span> Instruments
+        </h1>
+
+        <p class="hero-text">
+            <strong>AVSON</strong> is the brand of
+            <strong>SHIVSHAKTI TWEEZERS (SST)</strong>,
+            manufacturer, supplier and exporter of surgical
+            and veterinary instruments.
+        </p>
+
+        <p class="hero-text">
+            We provide precision instruments designed for
+            professional surgical, veterinary and clinical applications.
+        </p>
+
+        <div class="buttons">
+            <a href="#products" class="btn btn-primary">
+                Explore Products
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+                Contact AVSON
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <!-- Put avson-home.jpg in the same folder as index.html -->
+        <img src="avson-home.jpg" alt="AVSON Surgical and Veterinary Instruments">
+
+        <div class="hero-caption">
+            <h3>AVSON — Precision Instruments</h3>
+
+            <p>
+                Surgical & Veterinary Instruments by
+                SHIVSHAKTI TWEEZERS (SST).
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section id="categories">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            OUR PRODUCT RANGE
+        </div>
+
+        <h2>Instrument Categories</h2>
+
+        <p>
+            Explore our range of professional instruments
+            for surgical and veterinary applications.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <div class="category-card">
+
+            <div class="category-icon">✚</div>
+
+            <h3>Surgical Instruments</h3>
+
+            <p>
+                Surgical forceps, scissors, clamps,
+                retractors and specialized instruments.
+            </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">🐾</div>
+
+            <h3>Veterinary Instruments</h3>
+
+            <p>
+                Professional veterinary instruments
+                for animal care and procedures.
+            </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">⌁</div>
+
+            <h3>Tweezers & Forceps</h3>
+
+            <p>
+                Precision tweezers and forceps designed
+                for controlled professional handling.
+            </p>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <div class="category-icon">⚙</div>
+
+            <h3>Custom Instruments</h3>
+
+            <p>
+                Specialized instruments and custom
+                manufacturing solutions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            AVSON PRODUCT COLLECTION
+        </div>
+
+        <h2>Featured Instruments</h2>
+
+        <p>
+            Professional surgical and veterinary instruments
+            manufactured and supplied by SHIVSHAKTI TWEEZERS (SST).
+        </p>
+
+    </div>
+
+
+    <div class="products-grid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <div class="instrument-placeholder">✚</div>
+            </div>
+
+            <div class="product-content">
+
+                <h3>Surgical Forceps</h3>
+
+                <p>
+                    Precision gripping instruments
+                    for surgical applications.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <div class="instrument-placeholder">⚕</div>
+            </div>
+
+            <div class="product-content">
+
+                <h3>Veterinary Forceps</h3>
+
+                <p>
+                    Reliable instruments for
+                    veterinary procedures.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <div class="instrument-placeholder">⚙</div>
+            </div>
+
+            <div class="product-content">
+
+                <h3>Veterinary Castrator</h3>
+
+                <p>
+                    Specialized veterinary instrument
+                    for professional applications.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <div class="instrument-placeholder">⌁</div>
+            </div>
+
+            <div class="product-content">
+
+                <h3>Precision Tweezers</h3>
+
+                <p>
+                    Fine-control tweezers for
+                    delicate instrument work.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 5 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <div class="instrument-placeholder">✂</div>
+            </div>
+
+            <div class="product-content">
+
+                <h3>Surgical Scissors</h3>
+
+                <p>
+                    Precision cutting instruments
+                    for professional use.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 6 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <div class="instrument-placeholder">⚕</div>
+            </div>
+
+            <div class="product-content">
+
+                <h3>Hemostatic Forceps</h3>
+
+                <p>
+                    Professional clamping instruments
+                    for surgical procedures.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 7 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <div class="instrument-placeholder">+</div>
+            </div>
+
+            <div class="product-content">
+
+                <h3>Veterinary Surgical Tools</h3>
+
+                <p>
+                    Specialized tools for animal
+                    healthcare professionals.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 8 -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+                <div class="instrument-placeholder">⚙</div>
+            </div>
+
+            <div class="product-content">
+
+                <h3>Specialized Instruments</h3>
+
+                <p>
+                    Application-specific instruments
+                    for professional requirements.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="about-inner">
+
+        <div>
+
+            <div class="eyebrow">
+                ABOUT AVSON
+            </div>
+
+            <h2>
+                AVSON — A Brand by SHIVSHAKTI TWEEZERS
+            </h2>
+
+            <p>
+                <strong>SHIVSHAKTI TWEEZERS (SST)</strong>
+                is a manufacturer, supplier and exporter
+                of surgical and veterinary instruments.
+            </p>
+
+            <br>
+
+            <p>
+                Our brand <strong>AVSON</strong> represents
+                precision instruments developed for professional
+                use in surgical, veterinary and clinical applications.
+            </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <h3>Why Choose AVSON?</h3>
+
+            <ul class="check-list">
+
+                <li>
+                    Precision Manufacturing
+                </li>
+
+                <li>
+                    Quality Stainless Steel Instruments
+                </li>
+
+                <li>
+                    Professional Surgical Instruments
+                </li>
+
+                <li>
+                    Veterinary Instrument Range
+                </li>
+
+                <li>
+                    Reliable Product Supply
+                </li>
+
+                <li>
+                    Custom Instrument Requirements
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUALITY ================= -->
+
+<section id="quality">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            AVSON QUALITY
+        </div>
+
+        <h2>
+            Precision. Quality. Reliability.
+        </h2>
+
+        <p>
+            Our instruments are presented with a focus on
+            professional performance and dependable manufacturing.
+        </p>
+
+    </div>
+
+
+    <div class="quality-grid">
+
+        <div class="quality-card">
+
+            <h3>High Quality</h3>
+
+            <p>
+                Focus on quality materials and precision
+                manufacturing for professional instruments.
+            </p>
+
+        </div>
+
+
+        <div class="quality-card">
+
+            <h3>Precision Manufacturing</h3>
+
+            <p>
+                Instruments designed and manufactured
+                with attention to shape, finish and handling.
+            </p>
+
+        </div>
+
+
+        <div class="quality-card">
+
+            <h3>Global Supply</h3>
+
+            <p>
+                SHIVSHAKTI TWEEZERS (SST) serves customers
+                requiring surgical and veterinary instruments.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CUSTOM / OEM ================= -->
+
+<section class="custom-section">
+
+    <div class="custom-box">
+
+        <div class="eyebrow">
+            CUSTOM REQUIREMENTS
+        </div>
+
+        <h2>
+            Need a Specialized Instrument?
+        </h2>
+
+        <p>
+            Contact AVSON / SHIVSHAKTI TWEEZERS (SST)
+            for custom instruments, product requirements
+            and business enquiries.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+            Request an Enquiry
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="section-heading">
+
+        <div class="eyebrow">
+            CONTACT AVSON
+        </div>
+
+        <h2>
+            Get in Touch
+        </h2>
+
+        <p>
+            Contact SHIVSHAKTI TWEEZERS (SST) for
+            surgical and veterinary instrument enquiries.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-box">
+
+            <h3>Business Information</h3>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    BRAND
+                </span>
+
+                <strong>AVSON</strong>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    COMPANY
+                </span>
+
+                <strong>
+                    SHIVSHAKTI TWEEZERS (SST)
+                </strong>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    CONTACT PERSON
+                </span>
+
+                <strong>
+                    Mr. Rajan Babbar
+                </strong>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    CONTACT PERSON
+                </span>
+
+                <strong>
+                    Prince Babbar
+                </strong>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    EMAIL
+                </span>
+
+                <a href="mailto:shivshaktitweezerssst777@gmail.com">
+                    shivshaktitweezerssst777@gmail.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    ADDRESS
+                </span>
+
+                <div class="address">
+
+                    H. No. 50, Guru Sant Nagar,
+                    Basti Danishmanda,
+                    Jalandhar, Punjab – 144002,
+                    India.
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PHONE NUMBERS -->
+
+        <div class="contact-box">
+
+            <h3>Phone & WhatsApp</h3>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    PHONE / WHATSAPP
+                </span>
+
+                <a href="tel:+917986016710">
+                    +91 79860 16710
+                </a>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    PHONE / WHATSAPP
+                </span>
+
+                <a href="tel:+919614460786">
+                    +91 96144 60786
+                </a>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    PHONE / WHATSAPP
+                </span>
+
+                <a href="tel:+919877264749">
+                    +91 98772 64749
+                </a>
+
+            </div>
+
+
+            <div class="contact-row">
+
+                <span class="contact-label">
+                    PHONE / WHATSAPP
+                </span>
+
+                <a href="tel:+916280416079">
+                    +91 62804 16079
+                </a>
+
+            </div>
+
+
+            <div class="buttons">
+
+                <a
+                    href="https://wa.me/917986016710"
+                    target="_blank"
+                    class="btn btn-primary"
+                >
+                    WhatsApp AVSON
+                </a>
+
+                <a
+                    href="mailto:shivshaktitweezerssst777@gmail.com"
+                    class="btn btn-secondary"
+                >
+                    Send Email
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <strong>
+        AVSON
+    </strong>
+
+    <p>
+        SHIVSHAKTI TWEEZERS (SST)
+        • Surgical & Veterinary Instruments
+    </p>
+
+    <p>
+        © 2026 SHIVSHAKTI TWEEZERS (SST). All Rights Reserved.
+    </p>
+
+</footer>
+
+
+</body>
+</html>
